@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище council_of_womenModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="donat">
+    <Key>
+      <PropertyRef Name="numb_donat" />
+    </Key>
+    <Property Name="numb_donat" Type="int" Nullable="false" />
+    <Property Name="date_donat" Type="date" Nullable="false" />
+    <Property Name="summ" Type="money" Nullable="false" />
+    <Property Name="numb_pay" Type="int" Nullable="false" />
+    <Property Name="loginn" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="inn_fund" Type="numeric" Precision="12" Scale="0" />
+  </EntityType>
+  <EntityType Name="entry1">
+    <Key>
+      <PropertyRef Name="numb_entry" />
+    </Key>
+    <Property Name="numb_entry" Type="int" Nullable="false" />
+    <Property Name="date_entry" Type="date" Nullable="false" />
+    <Property Name="loginn" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numb_event" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="event12">
+    <Key>
+      <PropertyRef Name="numb_event" />
+    </Key>
+    <Property Name="numb_event" Type="int" Nullable="false" />
+    <Property Name="date_event" Type="date" Nullable="false" />
+    <Property Name="locationn" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="name_event" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="street_event" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="house_event" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="funds">
+    <Key>
+      <PropertyRef Name="inn_fund" />
+    </Key>
+    <Property Name="name_fund" Type="nvarchar" MaxLength="50" />
+    <Property Name="street_fund" Type="nvarchar" MaxLength="50" />
+    <Property Name="house_fund" Type="int" Nullable="false" />
+    <Property Name="town_fund" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone_fund" Type="numeric" Precision="11" Scale="0" Nullable="false" />
+    <Property Name="inn_fund" Type="numeric" Precision="12" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="pay_type">
+    <Key>
+      <PropertyRef Name="numb_pay" />
+    </Key>
+    <Property Name="numb_pay" Type="int" Nullable="false" />
+    <Property Name="numb_card" Type="numeric" Precision="19" Scale="0" Nullable="false" />
+    <Property Name="google_pay" Type="bit" Nullable="false" />
+    <Property Name="pay_pal" Type="bit" Nullable="false" />
+    <Property Name="qiwi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="user1">
+    <Key>
+      <PropertyRef Name="loginn" />
+    </Key>
+    <Property Name="loginn" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="namee" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="patronymic" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone_user" Type="numeric" Precision="11" Scale="0" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="passwordd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="leader" Type="nvarchar" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__donat__inn_fund__03F0984C">
+    <End Role="funds" Type="Self.funds" Multiplicity="0..1" />
+    <End Role="donat" Type="Self.donat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="funds">
+        <PropertyRef Name="inn_fund" />
+      </Principal>
+      <Dependent Role="donat">
+        <PropertyRef Name="inn_fund" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__donat__loginn__70DDC3D8">
+    <End Role="user1" Type="Self.user1" Multiplicity="1" />
+    <End Role="donat" Type="Self.donat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user1">
+        <PropertyRef Name="loginn" />
+      </Principal>
+      <Dependent Role="donat">
+        <PropertyRef Name="loginn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__donat__numb_pay__4AB81AF0">
+    <End Role="pay_type" Type="Self.pay_type" Multiplicity="1" />
+    <End Role="donat" Type="Self.donat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pay_type">
+        <PropertyRef Name="numb_pay" />
+      </Principal>
+      <Dependent Role="donat">
+        <PropertyRef Name="numb_pay" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__entry1__loginn__72C60C4A">
+    <End Role="user1" Type="Self.user1" Multiplicity="1" />
+    <End Role="entry1" Type="Self.entry1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user1">
+        <PropertyRef Name="loginn" />
+      </Principal>
+      <Dependent Role="entry1">
+        <PropertyRef Name="loginn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__entry1__numb_eve__4F7CD00D">
+    <End Role="event12" Type="Self.event12" Multiplicity="1" />
+    <End Role="entry1" Type="Self.entry1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event12">
+        <PropertyRef Name="numb_event" />
+      </Principal>
+      <Dependent Role="entry1">
+        <PropertyRef Name="numb_event" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище council_of_womenModelContainer">
+    <EntitySet Name="donat" EntityType="Self.donat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="entry1" EntityType="Self.entry1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="event12" EntityType="Self.event12" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="funds" EntityType="Self.funds" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pay_type" EntityType="Self.pay_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user1" EntityType="Self.user1" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__donat__inn_fund__03F0984C" Association="Self.FK__donat__inn_fund__03F0984C">
+      <End Role="funds" EntitySet="funds" />
+      <End Role="donat" EntitySet="donat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__donat__loginn__70DDC3D8" Association="Self.FK__donat__loginn__70DDC3D8">
+      <End Role="user1" EntitySet="user1" />
+      <End Role="donat" EntitySet="donat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__donat__numb_pay__4AB81AF0" Association="Self.FK__donat__numb_pay__4AB81AF0">
+      <End Role="pay_type" EntitySet="pay_type" />
+      <End Role="donat" EntitySet="donat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__entry1__loginn__72C60C4A" Association="Self.FK__entry1__loginn__72C60C4A">
+      <End Role="user1" EntitySet="user1" />
+      <End Role="entry1" EntitySet="entry1" />
+    </AssociationSet>
+    <AssociationSet Name="FK__entry1__numb_eve__4F7CD00D" Association="Self.FK__entry1__numb_eve__4F7CD00D">
+      <End Role="event12" EntitySet="event12" />
+      <End Role="entry1" EntitySet="entry1" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

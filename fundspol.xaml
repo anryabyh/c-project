@@ -1,0 +1,93 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3_1"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:Custom="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" x:Class="_3_1.fundspol"
+        mc:Ignorable="d"
+        Title="Фонды" Height="437.705" Width="759.426" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="TextBoxStyle1" TargetType="{x:Type TextBox}">
+            <Setter Property="dx:ScrollBarExtensions.ScrollBehavior" Value="{dx:TextBoxScrollBehavior}"/>
+            <Setter Property="AllowDrop" Value="True"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#14F4F1"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="CaretBrush" Value="#FF444444"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Foreground" Value="#FF444444"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="SelectionBrush" Value="#FF0173C7"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <dx:DXBorder x:Name="IsDefault" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="15" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" EnableDPICorrection="{x:Null}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\TextBox.xaml;23;12">
+                            <ScrollViewer x:Name="PART_ContentHost" Padding="{TemplateBinding Padding}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\TextBox.xaml;24;14" Margin="3,0,-3,0"/>
+                        </dx:DXBorder>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="IsDefault" Value="0.38"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsReadOnly" Value="True">
+                    <Setter Property="BorderBrush" Value="#FFABABAB"/>
+                    <Setter Property="Background" Value="{DynamicResource {Custom:CommonThemeKey ResourceKey=ReadOnlyBackgroundBrush, ThemeName=Office2019Colorful}}"/>
+                </Trigger>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#FF0173C7"/>
+                </Trigger>
+                <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+                    <Setter Property="Padding" Value="13"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="LabelStyle1" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="Foreground" Value="#5D3F9A"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="0,3"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Label}">
+                        <dx:DXBorder BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" EnableDPICorrection="{x:Null}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\Label.xaml;14;12">
+                            <ContentPresenter x:Name="Content" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\Label.xaml;15;14" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </dx:DXBorder>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="Content" Value="0.38"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Style.Triggers>
+                <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+                    <Setter Property="Padding" Value="0,14"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <DataGrid Background="#5D3F9A" FontSize="14"  IsReadOnly="True" SelectedValuePath="numb_fund" x:Name="dgfunds" HorizontalAlignment="Left" Height="301" Width="675" Margin="39,81,0,0" AutoGenerateColumns="False" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding name_fund}" Header="Название фонда"/>
+                <DataGridTextColumn Binding="{Binding street_fund}" Header="Улица"/>
+                <DataGridTextColumn Binding="{Binding house_fund}" Header="Номер дома"/>
+                <DataGridTextColumn Binding="{Binding town_fund}" Header="Город"/>
+                <DataGridTextColumn Binding="{Binding phone_fund}" Header="Номер телефона"/>
+                <DataGridTextColumn Binding="{Binding inn_fund}" Header="ИНН"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox  x:Name="TB_Search" TextChanged="TextBox_TextChanged" HorizontalAlignment="Left" Height="23" Margin="38,46,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="676" Style="{DynamicResource TextBoxStyle1}"/>
+        <Label Content="Поиск по названию фонда" HorizontalAlignment="Left" Margin="42,21,0,0" VerticalAlignment="Top" Style="{DynamicResource LabelStyle1}"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e5a0f493e7cb451a9ef9507bc5f7db8a" Name="Diagram1">
+        <EntityTypeShape EntityType="council_of_womenModel.donat" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="council_of_womenModel.entry1" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="council_of_womenModel.event12" Width="1.5" PointX="8" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="council_of_womenModel.funds" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="council_of_womenModel.pay_type" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="council_of_womenModel.sysdiagrams" Width="1.5" PointX="1.125" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="council_of_womenModel.user1" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="council_of_womenModel.FK__donat__loginn__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="council_of_womenModel.FK__donat__numb_pay__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="council_of_womenModel.FK__entry1__loginn__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="council_of_womenModel.FK__entry1__numb_eve__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="council_of_womenModel.FK__donat__inn_fund__03F0984C" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

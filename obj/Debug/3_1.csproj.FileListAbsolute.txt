@@ -1,0 +1,182 @@
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.csprojAssemblyReference.cache
+C:\Users\ryaby\source\repos\3_1\obj\Debug\App.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1_Content.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1_MarkupCompile.cache
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1_MarkupCompile.lref
+C:\Users\ryaby\source\repos\3_1\bin\Debug\3_1.exe.config
+C:\Users\ryaby\source\repos\3_1\bin\Debug\3_1.exe
+C:\Users\ryaby\source\repos\3_1\bin\Debug\3_1.pdb
+C:\Users\ryaby\source\repos\3_1\bin\Debug\EntityFramework.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\EntityFramework.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.g.resources
+C:\Users\ryaby\source\repos\3_1\obj\Debug\_3_1.Properties.Resources.resources
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.csproj.GenerateResource.cache
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.csproj.CoreCompileInputs.cache
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.csproj.CopyComplete
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.exe
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.pdb
+C:\Users\ryaby\source\repos\3_1\obj\Debug\3_1.exe.licenses
+C:\Users\ryaby\source\repos\3_1\obj\Debug\MainWindow.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\MainWindow.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Добавление фонда .g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Добавление фонда .baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Главная Руководитель.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Главная Руководитель.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\ЗаписьНаСобытиесФондом.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\ЗаписьНаСобытиесФондом.baml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Data.Desktop.v21.1.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Data.v21.1.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Mvvm.v21.1.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Pdf.v21.1.Core.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Printing.v21.1.Core.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Xpf.Core.v21.1.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Data.Desktop.v21.1.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Data.v21.1.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Mvvm.v21.1.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Pdf.v21.1.Core.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Printing.v21.1.Core.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Xpf.Core.v21.1.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\de\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\es\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ja\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ru\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\de\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\es\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ja\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ru\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\de\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\es\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ja\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ru\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\de\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\es\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ja\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ru\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Autorization.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Autorization.baml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ClosedXML.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\System.IO.Packaging.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ClosedXML.pdb
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ClosedXML.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Пользователь.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Пользователь.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Dictionary1.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\App.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Map.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\Map.baml
+C:\Users\ryaby\source\repos\3_1\bin\Debug\AjaxMin.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\GMap.NET.Core.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\Gmap.net.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\ryaby\source\repos\3_1\bin\Debug\Gmap.net.pdb
+C:\Users\ryaby\source\repos\3_1\obj\Debug\registrationryk.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\registrationryk.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\registrpolz.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\registrpolz.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\addentry12.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\addentry12.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\fundspol.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\fundspol.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\pozhertvovanie.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\pozhertvovanie.baml
+C:\Users\ryaby\source\repos\3_1\obj\Debug\eventtt.g.cs
+C:\Users\ryaby\source\repos\3_1\obj\Debug\eventtt.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\3_1.exe.config
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\3_1.exe
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\3_1.pdb
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\AjaxMin.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ClosedXML.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\EntityFramework.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\GMap.NET.Core.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\Gmap.net.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\System.IO.Packaging.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ClosedXML.pdb
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ClosedXML.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Data.Desktop.v21.1.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Data.v21.1.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Mvvm.v21.1.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Pdf.v21.1.Core.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Printing.v21.1.Core.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Xpf.Core.v21.1.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\EntityFramework.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\Gmap.net.pdb
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.xml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\de\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\es\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ja\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ru\DevExpress.Data.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\de\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\es\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ja\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ru\DevExpress.Pdf.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\de\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\es\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ja\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ru\DevExpress.Printing.v21.1.Core.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\de\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\es\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ja\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ru\DevExpress.Xpf.Core.v21.1.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.csproj.AssemblyReference.cache
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\addentry12.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\addentry12.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Autorization.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\eventtt.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\fundspol.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\MainWindow.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Map.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\pozhertvovanie.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\registrationryk.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\registrpolz.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Главная Руководитель.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Добавление фонда .g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\ЗаписьНаСобытиесФондом.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Пользователь.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\App.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1_Content.g.cs
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1_MarkupCompile.cache
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1_MarkupCompile.lref
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\App.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Autorization.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Dictionary1.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\eventtt.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\fundspol.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\MainWindow.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Map.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\pozhertvovanie.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\registrationryk.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\registrpolz.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Главная Руководитель.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Добавление фонда .baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\ЗаписьНаСобытиесФондом.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\Пользователь.baml
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.g.resources
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\_3_1.Properties.Resources.resources
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.csproj.GenerateResource.cache
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.exe.licenses
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.csproj.CoreCompileInputs.cache
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.csproj.CopyComplete
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.exe
+C:\Users\ryaby\Downloads\3_1 (1)\3_1\obj\Debug\3_1.pdb

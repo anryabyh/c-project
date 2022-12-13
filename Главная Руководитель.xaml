@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3_1"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="_3_1.Главная_Руководитель"
+        mc:Ignorable="d"
+        Title="Руководитель" Height="400" Width="700">
+
+    <Window.Resources>
+        <ControlTemplate x:Key="ButtonBase" TargetType="{x:Type ButtonBase}">
+            <dx:DXBorder x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" EnableDPICorrection="{x:Null}" SnapsToDevicePixels="True" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\Button.xaml;7;6">
+                <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\Button.xaml;8;8" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+            </dx:DXBorder>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" TargetName="border" Value="0.38"/>
+                </Trigger>
+                <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+                    <Setter Property="MinWidth" TargetName="border" Value="44"/>
+                    <Setter Property="MinHeight" TargetName="border" Value="44"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="1.jpg"/>
+        </Grid.Background>
+        <Button Content="Добавление события" HorizontalAlignment="Left" Margin="0,112,0,0" VerticalAlignment="Top" Width="237" Height="56" Click="AddEvent_Button_Click"/>
+        <Button Content="Добавление фонда" HorizontalAlignment="Left" Height="63" Margin="425,110,0,0" VerticalAlignment="Top" Width="261" Click="AddFund_Button_Click"/>
+        <Button Content="Записи на события" HorizontalAlignment="Left" Margin="425,251,0,0" Width="221" VerticalAlignment="Top" Click="EntryAndEvent_Button_Click" Height="57"/>
+        <Button Content="Регистрация руководителя" HorizontalAlignment="Left" Margin="33,251,0,0" Width="229" VerticalAlignment="Top" Click="registration_Button_Click" Height="57"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="604,13,0,0" Width="78" VerticalAlignment="Top" Click="Exit_button_click" Height="34" Template="{DynamicResource ButtonBase}"/>
+    </Grid>
+</Window>

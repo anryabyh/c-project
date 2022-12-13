@@ -1,0 +1,148 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3_1"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:Custom="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" x:Class="_3_1.registrationryk"
+        mc:Ignorable="d"
+        Title="Регистрация руководителя" Height="309" Width="245"  Loaded="Window_loaded_dgregistrationryk">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="dx:ScrollBarExtensions.ScrollBehavior" Value="{dx:TextBoxScrollBehavior}"/>
+            <Setter Property="AllowDrop" Value="True"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#FFABABAB"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CaretBrush" Value="#FF444444"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Foreground" Value="#FF444444"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="SelectionBrush" Value="#FF0173C7"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <dx:DXBorder CornerRadius="15" x:Name="IsDefault" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" EnableDPICorrection="{x:Null}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\TextBox.xaml;23;12">
+                            <ScrollViewer x:Name="PART_ContentHost" Padding="{TemplateBinding Padding}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\TextBox.xaml;24;14"/>
+                        </dx:DXBorder>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="IsDefault" Value="0.38"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsReadOnly" Value="True">
+                    <Setter Property="BorderBrush" Value="#FFABABAB"/>
+                    <Setter Property="Background" Value="{DynamicResource {Custom:CommonThemeKey ResourceKey=ReadOnlyBackgroundBrush, ThemeName=Office2019Colorful}}"/>
+                </Trigger>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#FF0173C7"/>
+                </Trigger>
+                <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+                    <Setter Property="Padding" Value="13"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="Foreground" Value="#5D3F9A"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="0,3"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Label}">
+                        <dx:DXBorder BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" EnableDPICorrection="{x:Null}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\Label.xaml;14;12">
+                            <ContentPresenter x:Name="Content" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\Label.xaml;15;14" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </dx:DXBorder>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="Content" Value="0.38"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Style.Triggers>
+                <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+                    <Setter Property="Padding" Value="0,14"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type PasswordBox}">
+            <Setter Property="AllowDrop" Value="True"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="PasswordChar" Value="●"/>
+            <Setter Property="BorderBrush" Value="#FFABABAB"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CaretBrush" Value="#FF444444"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Foreground" Value="#FF444444"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="SelectionBrush" Value="#FF0173C7"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type PasswordBox}">
+                        <dx:DXBorder CornerRadius="15" x:Name="IsDefault" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" EnableDPICorrection="{x:Null}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\PasswordBox.xaml;23;12">
+                            <ScrollViewer x:Name="PART_ContentHost" Padding="{TemplateBinding Padding}" dx:BlendHelper2.ThemeInfo="Core\Core\Themes\Office2019Colorful\StandardControls\PasswordBox.xaml;24;14"/>
+                        </dx:DXBorder>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" TargetName="IsDefault" Value="#FF0173C7"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="IsDefault" Value="0.38"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+                    <Setter Property="Padding" Value="13"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <DataGrid IsReadOnly="True" Visibility="Collapsed"  SelectedValuePath="loginn" x:Name="dgregistrationryk" HorizontalAlignment="Left" Height="230" Width="676" Margin="38,108,0,0" AutoGenerateColumns="False" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding loginn}" Header=""/>
+                <DataGridTextColumn Binding="{Binding surname}" Header=""/>
+                <DataGridTextColumn Binding="{Binding namee}" Header=""/>
+                <DataGridTextColumn Binding="{Binding patronymic}" Header=""/>
+                <DataGridTextColumn Binding="{Binding phone_user}" Header=""/>
+                <DataGridTextColumn Binding="{Binding email}" Header=""/>
+                <DataGridTextColumn Binding="{Binding passwordd}" Header=""/>
+                <DataGridTextColumn Binding="{Binding leader}" Header=""/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox HorizontalAlignment="Left" x:Name="TBloginn" Height="23" Margin="74,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TBsur" Height="23" Margin="74,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TBname" Height="23" Margin="74,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TBpatr" Height="23" Margin="74,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TBphone" Height="23" Margin="74,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TBemail" Height="23" Margin="74,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154"/>
+        <TextBox HorizontalAlignment="Left" x:Name="TBleader" Height="23" Visibility="Collapsed" Margin="74,211,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Content="Фамилия"/>
+        <Label HorizontalAlignment="Left" Margin="9,67,0,0" VerticalAlignment="Top" Content="Имя"/>
+        <Label HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Content="Отчество"/>
+        <Label HorizontalAlignment="Left" Margin="9,125,0,0" VerticalAlignment="Top" Content="Телефон"/>
+        <Label HorizontalAlignment="Left" Margin="9,176,0,0" VerticalAlignment="Top" Content="Пароль" Width="47"/>
+        <Label HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Content="Email" Width="35"/>
+        <PasswordBox x:Name="PB_password"  HorizontalAlignment="Left" Margin="74,176,0,0" VerticalAlignment="Top" Width="154"/>
+        <Button x:Name="Add" Content="Добавить"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="112" Height="56" Margin="120,201,-10,0" Click="Add_Click"/>
+        <Button x:Name="null" Content="Отчистить"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="114" Height="56" Margin="0,201,0,0" Click="null_Click" RenderTransformOrigin="0.766,0.884"/>
+
+    </Grid>
+</Window>
